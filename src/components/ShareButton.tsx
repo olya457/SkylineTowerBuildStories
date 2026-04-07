@@ -24,16 +24,9 @@ export default function ShareButton({ title, content }: Props) {
 const styles = StyleSheet.create({
   btn: {
     backgroundColor: COLORS.accent,
-    borderRadius: 22,
-    paddingHorizontal: 28,
-    paddingVertical: 10,
-    alignItems: 'center',
-    justifyContent: 'center',
-    minWidth: 100,
+    borderRadius: 22, paddingHorizontal: 28,
+    paddingVertical: 10, alignItems: 'center',
+    justifyContent: 'center', minWidth: 100,
   },
-  text: {
-    color: '#1a1a1a',
-    fontWeight: '700',
-    fontSize: 15,
-  },
+  text: { color: '#1a1a1a', fontWeight: '700', fontSize: 15 },
 });

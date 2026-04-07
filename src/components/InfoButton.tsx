@@ -16,19 +16,10 @@ export default function InfoButton({ onPress }: Props) {
 
 const styles = StyleSheet.create({
   btn: {
-    width: 28,
-    height: 28,
-    borderRadius: 14,
+    width: 28, height: 28, borderRadius: 14,
     backgroundColor: 'rgba(255,255,255,0.18)',
-    borderWidth: 1.5,
-    borderColor: 'rgba(255,255,255,0.4)',
-    alignItems: 'center',
-    justifyContent: 'center',
+    borderWidth: 1.5, borderColor: 'rgba(255,255,255,0.4)',
+    alignItems: 'center', justifyContent: 'center',
   },
-  text: {
-    color: COLORS.white,
-    fontSize: 14,
-    fontWeight: '700',
-    fontStyle: 'italic',
-  },
+  text: { color: COLORS.white, fontSize: 14, fontWeight: '700', fontStyle: 'italic' },
 });

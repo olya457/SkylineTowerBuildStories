@@ -40,21 +40,28 @@ export interface SavedItem {
 }
 
 export type RootStackParamList = {
-  Splash: undefined;
-  Onboarding: undefined;
-  Main: undefined;
-  Info: { section: TabSectionName };
+  Splash:      undefined;
+  Onboarding:  undefined;
+  Main:        undefined;
+  Info:        { section: InfoSectionName };
   StoryDetail: { story: Story };
-  BlogDetail: { post: BlogPost };
+  BlogDetail:  { post: BlogPost };
   PlaceDetail: { place: Location };
 };
 
 export type TabParamList = {
-  Stories: undefined;
-  Blog: undefined;
-  Map: undefined;
-  Facts: undefined;
-  Saved: undefined;
+  Stories:   undefined;
+  Blog:      undefined;
+  Locations: undefined;
+  Map:       undefined;
+  Facts:     undefined;
+  Saved:     undefined;
 };
 
-export type TabSectionName = keyof TabParamList;
+export type InfoSectionName =
+  | 'Stories'
+  | 'Blog'
+  | 'Locations'
+  | 'Map'
+  | 'Facts'
+  | 'Saved';
